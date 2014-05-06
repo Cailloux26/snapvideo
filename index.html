@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shooter</title>
+<!-- for pc / smartphone  -->
+<link rel="stylesheet" media="all" type="text/css" href="./css/common.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/common.js" async defer></script>
+<script src="../js/ga.js" async defer></script>
+<!--[if lt IE 9]> 
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+    <header id="header" role="banner">
+        <div id="header_body">
+            <h1 id="sitetitle">Shooter</h1>
+        </div>
+    </header>
+    <section class="video-wrapper">
+        <main id="container" role="main">
+            <div class="video_container">
+                <div id="video">
+                    <video id='shoot_video' muted  loop autoplay controls onloadedmetadata="meta();">
+                        <source src="./images/IMG_0705.mp4" type="video/mp4" />
+                        <source src="./images/IMG_0705.ogv" type="video/ogg" />
+                        you need the browser which video tag is available to watch this video.
+                    </video>
+                </div>
+                <div id="snap_container">
+                    <button id="snapshot" class="snapshot_btn">Capture</button>
+                    <button id="cam" class="snapshot_btn">camera</button>
+                </div>
+                <canvas id="canvas" width="568" height="320" ></canvas>
+                <div id="images_container">
+                    <div id="images_background">
+                    </div>
+                </div>
+                <div id="cursor" style="position:absolute">
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer role="contentinfo" id="footer">
+        <small>Copyright 2014, Shooter. All rights reserved.</small>
+        <address>contact:xxxxx@gmail.com </address>
+    </footer>
+</div>
+</body>
+</html>
